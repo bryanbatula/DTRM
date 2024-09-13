@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F8F9FA;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+}
+.page-title {
+    font-size: 24px;
+    color: #2F5E31;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.form-section {
+    margin-bottom: 20px;
+}
+.form-section label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2F5E31;
+}
+.form-section input[type="text"],
+.form-section select,
+.form-section textarea,
+.form-section input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+.form-section textarea {
+    resize: vertical;
+    height: 100px;
+}
+.form-section .help-text {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #666;
+}
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-draft,
+.btn-finalize {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.btn-draft {
+    background-color: #CCC;
+    color: #333;
+}
+.btn-finalize {
+    background-color: #2F5E31;
+    color: white;
+}

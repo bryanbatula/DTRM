@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTRM System</title>
+    <link rel="stylesheet" href="../public/home.css">
+</head> 
+<body>
+    <div class="sidebar">
+
+        <div class="sidebar-header">
+            <img src="../public/img/essu logo1.png" alt="Logo">
+            <h1>Document Tracking and Record Management System</h1>
+        </div>
+
+        <button class="add-documents-btn"><a href="addDocs.html">+ ADD DOCUMENTS</a></button>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#">📥 To Receive</a></li>
+                <li><a href="#">⏸ Pending for Release</a></li>
+                <li><a href="#">🔄 Received / Release</a></li>
+                <li><a href="#">📑 Tagged as Terminal</a></li>
+                <li><a href="#">📊 My Tracking Numbers</a></li>
+                <li><a href="#">🗄 Archive</a></li>
+                <li><a href="#">⚙ My Settings</a></li>
+            </ul>
+        </nav>
+        <button class="logout-btn">Log Out</button>
+        <!-- <div class="logout">
+            <a href="#" class="logout-btn">Log Out</a>
+        </div> -->
+    </div>
+
+    <div class="main-content">
+        <div class="top-bar">
+            <h2>Dashboard</h2>
+        </div>
+
+        <div class="welcome">
+            <h1>Hello, ESSUnian!</h1>
+            <input type="text" class="search-bar" placeholder="Search anything . . .">
+        </div>
+
+        <table class="documents-table">
+            <thead>
+                <tr>
+                    <th>Tracking Number</th>
+                    <th>Sender</th>
+                    <th>Details</th>
+                    <th>Required Action</th>
+                    <th>Date of Letter</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2024-1234567</td>
+                    <td>Carmela Abedanio</td>
+                    <td>Letter-For Information</td>
+                    <td>For confirmation</td>
+                    <td>Sept. 7, 2024</td>
+                    <td><span class="status pending">Pending</span></td>
+                    <td><button class="view-btn">View</button></td>
+                </tr>
+                <tr>
+                    <td>2024-1234567</td>
+                    <td>Robert Jongaya</td>
+                    <td>Letter-For Information</td>
+                    <td>For confirmation</td>
+                    <td>Sept. 7, 2024</td>
+                    <td><span class="status pending">Pending</span></td>
+                    <td><button class="view-btn">View</button></td>
+                </tr>
+                <tr>
+                    <td>2024-1234567</td>
+                    <td>Brix Cabsag</td>
+                    <td>Letter-For Information</td>
+                    <td>For confirmation</td>
+                    <td>Sept. 7, 2024</td>
+                    <td><span class="status pending">Pending</span></td>
+                    <td><button class="view-btn">View</button></td>
+                </tr>
+                <tr>
+                    <td>2024-345678</td>
+                    <td>Nerio Bolarda</td>
+                    <td>Indorsement</td>
+                    <td>For confirmation</td>
+                    <td>Sept. 7, 2024</td>
+                    <td><span class="status received">Received</span></td>
+                    <td><button class="view-btn">View</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

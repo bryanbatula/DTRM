@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Documents</title>
+    <link rel="stylesheet" href="../public/abs.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Add Documents</h1>
+        <form>
+            <div class="form-section">
+                <label for="tracking-number">Tracking Number</label>
+                <input type="text" id="tracking-number" name="tracking-number">
+                <p class="help-text">Please make sure to attach the correct tracking number to the actual document.</p>
+            </div>
+            <div class="form-section">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title">
+                <ul class="help-text">
+                    <li>You may remove any sensitive information (monetary amounts, names etc.) from the title if they are not necessary in tracking the document.</li>
+                    <li>Max length: 250 characters</li>
+                </ul>
+            </div>
+            <div class="form-section">
+                <label for="type">Type</label>
+                <select id="type" name="type">
+                    <option>Select document type</option>
+                    <!-- Add other options as necessary -->
+                </select>
+            </div>
+            <div class="form-section">
+                <label for="recipient-office">Recipient Office</label>
+                <select id="recipient-office" name="recipient-office">
+                    <option>Select campus of recipient office</option>
+                    <!-- Add other options as necessary -->
+                </select>
+                <p class="help-text">Assign intended recipient office of the document</p>
+            </div>
+            <div class="form-section">
+                <label for="remarks">Remarks</label>
+                <textarea id="remarks" name="remarks"></textarea>
+            </div>
+            <div class="form-section">
+                <label>For</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="for" value="coding"> Coding/deposit/preparation receipt</label>
+                    <label><input type="checkbox" name="for" value="comment"> Comment/reaction/response</label>
+                    <label><input type="checkbox" name="for" value="compliance"> Compliance/Implementation</label>
+                    <label><input type="checkbox" name="for" value="dissemination"> Dissemination of information</label>
+                    <label><input type="checkbox" name="for" value="draft"> Draft of reply</label>
+                    <label><input type="checkbox" name="for" value="endorsement"> Endorsement/Recommendation</label>
+                    <label><input type="checkbox" name="for" value="follow"> Follow up</label>
+                    <label><input type="checkbox" name="for" value="investigation"> Investigation/Verification and report</label>
+                    <label><input type="checkbox" name="for" value="notation"> Notation and return/file</label>
+                    <label><input type="checkbox" name="for" value="notification"> Notification/Reply to party</label>
+                    <label><input type="checkbox" name="for" value="study"> Study and report to</label>
+                    <label><input type="checkbox" name="for" value="translation"> Translation</label>
+                    <label><input type="checkbox" name="for" value="your"> Your information</label>
+                </div>
+            </div>
+            <div class="form-section">
+                <label for="file">File (Optional)</label>
+                <input type="file" id="file" name="file">
+                <ul class="help-text">
+                    <li>Allowed formats: PDF, GIF, JPG, PNG, ZIP</li>
+                    <li>Maximum size: 50mb</li>
+                    <li>You can upload larger files via Google Drive and then include the link in the remarks</li>
+                </ul>
+            </div>
+            <div class="form-section">
+                <label><input type="checkbox" name="email-notifications"> Notify me whenever someone processes this document</label>
+            </div>
+            <div class="form-buttons">
+                <button type="button" class="btn-draft">Save as Draft</button>
+                <button type="submit" class="btn-finalize">Finalize Document</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
